@@ -1,0 +1,7 @@
+---
+  - hosts: all
+    become: yes
+    tasks:
+      - name: "Debug"
+        debug:
+          msg="{{ inventory_hostname }}"
